@@ -102,7 +102,7 @@ def time_stats(df):
     # display the most common month
     # Improved code to eliminate redundancy when selecting month in scope
     # e.g. if June is select, most common month is June
-    # cleaned code to run only of 'all' is selected. 
+    # cleaned code to run only of 'all' is selected.
     if month == "all":
         common_month = df['Month'].mode()[0]
         print("The most common month for your inquiry is {}".format(common_month))
@@ -141,8 +141,9 @@ def station_stats(df):
 
 
     # display most frequent combination of start station and end station trip
+    # Edited: Fixed captialization of string.
     combination = (df['Start Station'] + " <> " + df['End Station']).mode()[0]
-    print("Most commonly used combination of start station and end station trip  is: {}".format(combination))
+    print("Most commonly used combination of Start Station and End Station trip  is: {}".format(combination))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
