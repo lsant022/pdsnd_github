@@ -113,12 +113,13 @@ def time_stats(df):
 
 
     # display the most common start hour
+    #Removed the ":00" portion to make output look cleaner
     common_hour = df['hour'].mode()[0]
     if common_hour >= 13:
         common_hour -= 12
-        print("The most common hour for your inquiry is {}:00PM".format(common_hour))
+        print("The most common hour for your inquiry is {}PM".format(common_hour))
     else:
-        print("The most common hour for your inquiry is {}:00AM".format(common_hour))
+        print("The most common hour for your inquiry is {}AM".format(common_hour))
 
 
     print("\nThis took %s seconds." % (time.time() - start_time))
