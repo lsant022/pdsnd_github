@@ -2,7 +2,7 @@
 #source https://stackoverflow.com/questions/31037298/pandas-get-column-average-mean
 # view all columns https://towardsdatascience.com/how-to-show-all-columns-rows-of-a-pandas-dataframe-c49d4507fcf
 # datetime columns https://stackoverflow.com/questions/26763344/convert-pandas-column-to-datetime
-
+# IN PROGESS WORKING ON REPO @ https://github.com/lsant022/pdsnd_github
 
 
 import time
