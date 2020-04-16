@@ -100,8 +100,12 @@ def time_stats(df):
     start_time = time.time()
 
     # display the most common month
-    common_month = df['Month'].mode()[0]
-    print("The most common month for your inquiry is {}".format(common_month))
+    # Improved code to eliminate redundancy when selecting month in scope
+    # e.g. if June is select, most common month is June
+    # cleaned code to run only of 'all' is selected. 
+    if month == "all":
+        common_month = df['Month'].mode()[0]
+        print("The most common month for your inquiry is {}".format(common_month))
 
     # display the most common day of week
     common_day = df['Day'].mode()[0]
